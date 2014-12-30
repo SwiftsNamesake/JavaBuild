@@ -79,8 +79,8 @@ def compileAndRun(**settings):
 	if settings.get('prompt', False):
 		args += input('Arguments: ')
 
-	Compile = javac.format(dependencies=';'.join(dependencies), output=output + ',')
-	Invoke  = java.format(dependencies=';'.join(dependencies), package=package + ',', entry=entry + ',', args=args)
+	Compile = javac.format(dependencies=';'.join(dependencies), output=output)
+	Invoke  = java.format(dependencies=';'.join(dependencies), package=package, entry=entry, args=args)
 
 	call(Compile, 'Compiling...\n  %s' % Compile) 	# Compile
 	call(Invoke, 'Invoking...\n  %s' % Invoke) 		# Run
