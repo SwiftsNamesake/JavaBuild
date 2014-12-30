@@ -1,0 +1,19 @@
+{
+
+	"dependencies": [
+		"../Inheritance (4)/classes",
+		"../Polymorphism (5)/classes",
+		"./classes"
+	],
+
+	// Adjust these variables as necessary
+	"output":  "classes",		  // Output directory
+	"package": "AssignmentSix",   // Package name
+	"entry":   "VehicleFrontend", // Class containing main method
+	
+	"arguments": ["All", "The", "Arguments"],
+	"prompt": false,
+
+	"log": true
+
+}
