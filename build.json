@@ -1,19 +1,22 @@
 {
 
-	"dependencies": [
-		"../Inheritance (4)/classes",
-		"../Polymorphism (5)/classes",
-		"./classes"
-	],
+    // This is an example of a valid config file for JavaBuild
+    // A more elaborate description of each argument can be found in build.py (compileAndRun)
 
-	// Adjust these variables as necessary
-	"output":  "classes",		  // Output directory
-	"package": "AssignmentSix",   // Package name
-	"entry":   "VehicleFrontend", // Class containing main method
-	
-	"arguments": ["All", "The", "Arguments"],
-	"prompt": false,
+    "dependencies": [
+        // Paths to directories with required class files
+        // "../" refers to the parent directory 
+        "./classes"
+    ],
 
-	"log": true
+    // Adjust these variables as necessary
+    "output":  "classes",  // Output directory
+    "package": "Example",  // Package name
+    "entry":   "Main",     // Class containing main method
+    
+    "arguments": ["All", "The", "Arguments"],
+    "prompt": false,
+
+    "log": true
 
 }
